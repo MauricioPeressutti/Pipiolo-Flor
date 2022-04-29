@@ -1,0 +1,327 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+$color-first: #eb661b !important;
+$color-second: #5b5b5b !important;
+$color-third: #f9b90e !important;
+$color-fourth: #8dc1b0 !important;
+$color-fifth: #f95364 !important;
+
+.color-white {
+    color: #ffffff !important;
+}
+
+.color-first {
+    color: $color-first;
+}
+
+.color-second {
+    color: $color-second;
+}
+
+.color-third {
+    color: $color-third;
+}
+
+.color-fourth {
+    color: $color-fourth;
+}
+
+.color-fifth {
+    color: $color-fifth;
+}
+
+.bg-color-first {
+    background-color: $color-first;
+}
+
+.bg-color-second {
+    background-color: $color-second;
+}
+
+.bg-color-third {
+    background-color: $color-third;
+}
+
+.bg-color-fourth {
+    background-color: $color-fourth;
+}
+
+.bg-color-fifth {
+    background-color: $color-fifth;
+}
+
+
+
+button:focus {
+    outline: none;
+}
+
+.main-panel {
+    position: relative;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    overflow: hidden;
+}
+
+.container-fluid > .card {
+    min-height: 85vh;
+}
+
+.card {
+    border-radius: .5rem;
+}
+
+.list-group {
+    border-radius: 0.5rem;
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+.card .form-control {
+    display: block;
+    width: 100%;
+    /**height: calc(1.5em + 0.75rem + 2px);**/
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 1px solid #e3e3e3;
+    border-radius: 30px;
+}
+
+body {
+    background: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card label {
+    font-size: 0.8571em;
+    margin-bottom: 5px;
+    /* color: #ffffff; */
+}
+
+.form-check .form-check-sign::after {
+    color: #ffffff;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Gotham-Light", "Gotham-Bold", "Gotham-Black", "Helvetica Neue", sans-serif;
+}
+
+.sidebar,
+.off-canvas-sidebar {
+    z-index: 1000;
+}
+
+.sticky-top {
+    z-index: 999;
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+/*==================================*/
+/*============= LOADING ============*/
+/*==================================*/
+
+.overlay-spinner {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.center-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*==================================*/
+/*========== END LOADING ===========*/
+/*==================================*/
+
+.sidebar[data-color="white"]:after,
+.off-canvas-sidebar[data-color="white"]:after {
+    background: #ffffff;
+}
+
+.sidebar:after,
+.off-canvas-sidebar:after {
+    background: #ffffff;
+    z-index: 3;
+}
+
+.sidebar .nav li > a,
+.off-canvas-sidebar .nav li > a {
+    color: $color-second;
+    border-radius: 0.5rem;
+}
+
+.sidebar .nav li.active > a i,
+.sidebar .nav li.active-pro > a i,
+.off-canvas-sidebar .nav li.active > a i,
+.off-canvas-sidebar .nav li.active-pro > a i {
+    color: $color-second;
+}
+
+.sidebar .logo .simple-text,
+.off-canvas-sidebar .logo .simple-text {
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    display: block;
+    white-space: nowrap;
+    font-size: 1em;
+    color: $color-second;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+table {
+    color: #5f6368;
+}
+
+.table > thead > tr > th {
+    border-bottom-width: 1px;
+    font-size: 0.8em;
+    font-weight: 500;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.table th,
+.table td {
+    vertical-align: top;
+    font-size: 0.8em;
+    border-top: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+.table .thead-first th {
+    color: #fff;
+    background-color: $color-second;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/*==============================================*/
+/*============= CARD DATA USER =================*/
+/*==============================================*/
+.card.card-data-user {
+    border: none;
+    background-color: #fff;
+
+    h6.user-name {
+        text-transform: uppercase;
+    }
+
+    h6.user-subname {
+        font-size: 0.8em;
+    }
+
+    .image {
+        height: auto;
+    }
+}
+
+/*==============================================*/
+/*=========== END CARD DATA USER ===============*/
+/*==============================================*/
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-radius {
+    border-radius: 1rem !important;
+}
+.border-end-end-radius {
+    border-end-end-radius: 1rem !important;
+}
+.border-top-left-radius {
+    border-top-left-radius: 1rem !important;
+}
+.border-top-right-radius {
+    border-top-right-radius: 1rem !important;
+}
+.border-end-start-radius {
+    border-end-start-radius: 1rem !important;
+}
+.border-start-end-radius {
+    border-start-end-radius: 1rem !important;
+}
+.border-bottom-left-radius {
+    border-bottom-left-radius: 1rem !important;
+}
+.border-start-start-radius {
+    border-start-start-radius: 1rem !important;
+}
+.border-bottom-right-radius {
+    border-bottom-right-radius: 1rem !important;
+}
+
+/*==============================================*/
+/*=========== NUEVO ESTILOS AGREGADOS ===============*/
+/*==============================================*/
+input:read-only{
+    background: rgba(0, 0, 0, 0) !important;
+    color: #ffffff !important;
+}
+.carousel-indicators{
+    left: calc(50% - 15%) !important;
+}
+
+.container-circle-img{
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+.mat-progress-spinner.mat-progress-spinner-indeterminate-animation[mode=indeterminate] circle {
+    stroke: rgb(126, 16, 16);
+}
